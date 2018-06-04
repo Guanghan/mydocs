@@ -33,6 +33,8 @@ Documentation
 
    install_CPN.rst
 
+   install_ArtTrack.rst	 
+
    utilities.rst 
 
    AR_apps.rst
