@@ -29,14 +29,13 @@ Link: `Script <http://bit.jd.com/svai/openSVAI/blob/dev/utility/utils_io_file.py
 
 I/O: Folder
 =============================
-utils_io_file.py is a light-weight python library dealing with I/O that is related to folders.
+utils_io_folder.py is a light-weight python library dealing with I/O that is related to folders.
 
 Its functionalities include::
 
 - get immediate sub-folder names/paths
 - get immediate childfile names/paths
 - create folder if it does not exist
-- find out whether a file is a video
 - get folder name from path
 
 Please kindly contribute your functions if you have more. 

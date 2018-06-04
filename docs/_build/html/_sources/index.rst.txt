@@ -31,6 +31,8 @@ Documentation
 
    install_alphapose.rst
 
+   install_CPN.rst
+
    utilities.rst 
 
    AR_apps.rst

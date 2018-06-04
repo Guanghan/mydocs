@@ -30,8 +30,8 @@ Documentation
    install_cuda.rst
 
    install_alphapose.rst
-	 
-	 install_CPN.rst
+
+   install_CPN.rst
 
    utilities.rst 
 
