@@ -33,9 +33,13 @@ We also provide the standard format we propose to use in our openSVAI project.
 
 The code is open-sourced in SVAI group. Please log in your Gitlab to 
 access the code.  
+
 Link: `Examples: COCO <http://bit.jd.com/svai/openSVAI/blob/dev/standardize/examples/COCO.json.example>`_
+
 Link: `Examples: PoseTrack <http://bit.jd.com/svai/openSVAI/blob/dev/standardize/examples/posetrack.json.example>`_
+
 Link: `Examples: OpenPose <http://bit.jd.com/svai/openSVAI/blob/dev/standardize/examples/openpose.json.example>`_
+
 Link: `Examples: Standard <http://bit.jd.com/svai/openSVAI/blob/dev/standardize/examples/standard.json.example>`_
 
 
@@ -51,7 +55,9 @@ TODO: convert between standard format and all the other formats
 
 The code is open-sourced in SVAI group. Please log in your Gitlab to 
 access the code.  
+
 Link: `OpenPose to COCO <http://bit.jd.com/svai/openSVAI/blob/dev/standardize/convert/openpose_to_COCO>`_
+
 Link: `OpenPose to PoseTrack <http://bit.jd.com/svai/openSVAI/blob/dev/standardize/convert/openpose_to_poseTrack>`_
 
 
@@ -64,4 +70,5 @@ TODO: add human parsing batch testing scripts based on deeplabv3+.
 
 The code is open-sourced in SVAI group. Please log in your Gitlab to 
 access the code.  
+
 Link: `Scripts <http://bit.jd.com/svai/openSVAI/blob/dev/standardize/scripts>`_
