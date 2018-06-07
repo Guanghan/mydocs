@@ -37,6 +37,8 @@ Documentation
 
    utilities.rst 
 
+   standardize.rst
+
    AR_apps.rst
 
 

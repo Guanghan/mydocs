@@ -1,0 +1,149 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Standardization &#8212; openJDAI  documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="AR applications" href="AR_apps.html" />
+    <link rel="prev" title="Utilities" href="utilities.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head>
+  <body>
+
+<div style="background-color: white; text-align: left; padding: 10px 10px 15px 15px">
+<a href="index.html"><h1 style="font-size: 3em;">openSVAI</h1></a>
+</div>
+
+
+
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper"><div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="utilities.html" title="previous chapter">Utilities</a></li>
+      <li>Next: <a href="AR_apps.html" title="next chapter">AR applications</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="standardization">
+<span id="standardize"></span><h1>Standardization<a class="headerlink" href="#standardization" title="Permalink to this headline">¶</a></h1>
+<p>The standardization of output format from each module. It is essential for end-to-end training and testing that employ different modules,
+including but not limited to candidate detection, human pose estimation, portrait segmentation (or human parsing), candidate tracking and pose tracking.</p>
+<p>Provided various end-to-end module baselines for common tasks, the standardizing of end-to-end module outputs ensure that
+(1) different methods may co-exist in each module;
+(2) these modules are able to run end-to-end;</p>
+<p>Once the standardization is fully implemented, we can start implementing a centralized program that calls different modules based on a configuration file,
+the modules of which can be from different deep learning frameworks.</p>
+<p>The common formats for object detection, segmentation, multi-person human pose estimation and tracking include: (1) COCO format, (2) PoseTrack format, and (3) OpenPose format.
+COCO and PoseTrack are the most influential benchmarks for object detection/segmentation and pose tracking, respectively.
+These two formats are the official formats defined by the dataset authors.</p>
+<p>The OpenPose format, on the other hand, is a ever-changing output format from the open-sourced project named “OpenPose”.
+It is the first real-time multi-person human pose estimation project that is available to the public. Therefore, it is widely adopted by researchers and engineers.
+It is not the most accurate algorithm at the moment, but it is very fast.
+Many methods may improve upon this open-source code, and output their results in the same format.
+So we implement the conversion of this OpenPose format as well.</p>
+<div class="section" id="format-examples">
+<h2>Format Examples<a class="headerlink" href="#format-examples" title="Permalink to this headline">¶</a></h2>
+<p>Multiple examples are provided. They are json format files, illustrating the format of results from (1) COCO, (2) PoseTrack, (3) OpenPose.
+We also provide the standard format we propose to use in our openSVAI project.</p>
+<p>The code is open-sourced in SVAI group. Please log in your Gitlab to
+access the code.
+Link: <a class="reference external" href="http://bit.jd.com/svai/openSVAI/blob/dev/standardize/examples/COCO.json.example">Examples: COCO</a>
+Link: <a class="reference external" href="http://bit.jd.com/svai/openSVAI/blob/dev/standardize/examples/posetrack.json.example">Examples: PoseTrack</a>
+Link: <a class="reference external" href="http://bit.jd.com/svai/openSVAI/blob/dev/standardize/examples/openpose.json.example">Examples: OpenPose</a>
+Link: <a class="reference external" href="http://bit.jd.com/svai/openSVAI/blob/dev/standardize/examples/standard.json.example">Examples: Standard</a></p>
+</div>
+<div class="section" id="conversion-between-formats">
+<h2>Conversion Between Formats<a class="headerlink" href="#conversion-between-formats" title="Permalink to this headline">¶</a></h2>
+<p>We provide a series of utilities to convert between different formats.
+Currently we provide these conversions:</p>
+<blockquote>
+<div><ul class="simple">
+<li>OpenPose format to PoseTrack format</li>
+<li>OpenPose format to COCO format</li>
+</ul>
+</div></blockquote>
+<p>TODO: convert between standard format and all the other formats</p>
+<p>The code is open-sourced in SVAI group. Please log in your Gitlab to
+access the code.
+Link: <a class="reference external" href="http://bit.jd.com/svai/openSVAI/blob/dev/standardize/convert/openpose_to_COCO">OpenPose to COCO</a>
+Link: <a class="reference external" href="http://bit.jd.com/svai/openSVAI/blob/dev/standardize/convert/openpose_to_poseTrack">OpenPose to PoseTrack</a></p>
+</div>
+<div class="section" id="other-scripts-batch-testing">
+<h2>Other Scripts: Batch Testing<a class="headerlink" href="#other-scripts-batch-testing" title="Permalink to this headline">¶</a></h2>
+<p>We provide bash scripts for batch testing.
+Currently we provide the batching test of multi-person human pose estimation for PoseTrack challenge, based on OpenPose and its descendent algorithms.</p>
+<p>TODO: add human parsing batch testing scripts based on deeplabv3+.</p>
+<p>The code is open-sourced in SVAI group. Please log in your Gitlab to
+access the code.
+Link: <a class="reference external" href="http://bit.jd.com/svai/openSVAI/blob/dev/standardize/scripts">Scripts</a></p>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2018, Guanghan Ning.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.6.6</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.10</a>
+      
+      |
+      <a href="_sources/standardize.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
