@@ -53,8 +53,8 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'openJDAI'
-copyright = u'2018, Guanghan Ning'
-author = u'Guanghan Ning'
+copyright = u'2018, SVAI'
+author = u'SVAI'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
