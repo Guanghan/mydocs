@@ -8,19 +8,19 @@ Welcome to openSVAI's documentation!
 
 openSVAI is a project aimed at:
 
-(1) open-sourcing utility code and bash scripts to reduce repetitive implementations and environment set-ups from SVAI members; 
+(1) open-sourcing utility code and bash scripts to reduce repetitive implementations and environment set-ups from SVAI members;
 
-(2) providing various end-to-end module baselines for common tasks, e.g., human candidates detection, keypoints regression and pose tracking; 
+(2) providing various end-to-end module baselines for common tasks, e.g., human candidates detection, keypoints regression and pose tracking;
 
-(3) standardizing end-to-end module outputs so that different methods may co-exist in a single module; 
+(3) standardizing end-to-end module outputs so that different methods may co-exist in a single module;
 
-(4) implementing a centralized program that calls different modules based on a configuration file, the modules of which can be from different deep learning frameworks. 
+(4) implementing a centralized program that calls different modules based on a configuration file, the modules of which can be from different deep learning frameworks.
 
 .. math::
 
    1 + 1 > 2
 
-Documentation 
+Documentation
 ====================================
 
 .. toctree::
@@ -29,13 +29,15 @@ Documentation
 
    install_cuda.rst
 
-   install_alphapose.rst
+   install_DCN.rst
 
    install_CPN.rst
 
-   install_ArtTrack.rst	 
+   install_alphapose.rst
 
-   utilities.rst 
+   install_ArtTrack.rst
+
+   utilities.rst
 
    standardize.rst
 
