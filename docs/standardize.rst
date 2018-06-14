@@ -49,11 +49,16 @@ We provide the example code to convert detection results into SVAI standard json
 The detections can be organized in any form. Usually the detections results are numpy array or python's native data format.
 We can use the tools provided in our library to conveniently convert the results into json string, and/or write to file.
 
-The code is open-sourced in SVAI group. Please log in your Gitlab to 
-access the code.  
+The code is open-sourced in SVAI group. Please log in your Gitlab to access the code.  
 
 Example Code: `Examples: detections to json <http://bit.jd.com/svai/openSVAI/blob/dev/standardize/convert/detect_to_standard/detect_to_standard.py>`_
 
+
+We also provide specific code to output detection results from Deformable ConvNets in our SVAI format.
+
+The code is open-sourced in SVAI group. Please log in your Gitlab to access the code. 
+
+Example Code: `Examples: RFCN to json <http://bit.jd.com/svai/openSVAI/blob/dev/standardize/convert/detect_to_standard/RFCN.py>`_
 
 Conversion Between Formats
 =============================
