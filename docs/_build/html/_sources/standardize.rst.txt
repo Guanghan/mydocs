@@ -43,8 +43,8 @@ Link: `Examples: OpenPose <http://bit.jd.com/svai/openSVAI/blob/dev/standardize/
 Link: `Examples: Standard <http://bit.jd.com/svai/openSVAI/blob/dev/standardize/examples/standard.json.example>`_
 
 
-Detections To SVAI Standard Json
-=================================
+Output Detections To SVAI Standard Json
+========================================
 We provide the example code to convert detection results into SVAI standard json output.
 The detections can be organized in any form. Usually the detections results are numpy array or python's native data format.
 We can use the tools provided in our library to conveniently convert the results into json string, and/or write to file.
@@ -58,7 +58,32 @@ We also provide specific code to output detection results from Deformable ConvNe
 
 The code is open-sourced in SVAI group. Please log in your Gitlab to access the code. 
 
-Example Code: `Examples: RFCN to json <http://bit.jd.com/svai/openSVAI/blob/dev/standardize/convert/detect_to_standard/RFCN.py>`_
+Example Code: `Examples: RFCN to standard json <http://bit.jd.com/svai/openSVAI/blob/dev/standardize/convert/detect_to_standard/RFCN.py>`_
+
+
+Read Detections From SVAI Standard Json
+========================================
+We provide the example code to load detection results of SVAI standard json format into python native format, for further processing (e.g., in the human pose estimation phase).
+
+The code is open-sourced in SVAI group. Please log in your Gitlab to access the code.  
+
+Example Code: `Examples: read standard json <http://bit.jd.com/svai/openSVAI/blob/dev/standardize/convert/keypoint_to_standard/read_standard_detect.py>`_
+
+
+Output Keypoints To SVAI Standard Json
+========================================
+We provide the example code to convert keypoint results into SVAI standard json output.
+The keypoints can be organized in any form. Usually the keypoints results are numpy array or python's native data format.
+We can use the tools provided in our library to conveniently convert the results into json string, and/or write to file.
+
+The code is open-sourced in SVAI group. Please log in your Gitlab to access the code.  
+
+Example Code: `Examples: keypoints to json <http://bit.jd.com/svai/openSVAI/blob/dev/standardize/convert/keypoint_to_standard/keypoint_to_standard.py>`_
+
+We provide specific code to output human keypoint results from Cascaded Pyramid Networks (CPN) in our SVAI format.
+
+Example Code: `Examples: CPN to standard json <http://bit.jd.com/svai/openSVAI/blob/dev/standardize/convert/keypoint_to_standard/CPN.py>`_
+
 
 Conversion Between Formats
 =============================

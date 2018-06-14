@@ -97,8 +97,8 @@ access the code.</p>
 <p>Link: <a class="reference external" href="http://bit.jd.com/svai/openSVAI/blob/dev/standardize/examples/openpose.json.example">Examples: OpenPose</a></p>
 <p>Link: <a class="reference external" href="http://bit.jd.com/svai/openSVAI/blob/dev/standardize/examples/standard.json.example">Examples: Standard</a></p>
 </div>
-<div class="section" id="detections-to-svai-standard-json">
-<h2>Detections To SVAI Standard Json<a class="headerlink" href="#detections-to-svai-standard-json" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="output-detections-to-svai-standard-json">
+<h2>Output Detections To SVAI Standard Json<a class="headerlink" href="#output-detections-to-svai-standard-json" title="Permalink to this headline">¶</a></h2>
 <p>We provide the example code to convert detection results into SVAI standard json output.
 The detections can be organized in any form. Usually the detections results are numpy array or python’s native data format.
 We can use the tools provided in our library to conveniently convert the results into json string, and/or write to file.</p>
@@ -106,7 +106,23 @@ We can use the tools provided in our library to conveniently convert the results
 <p>Example Code: <a class="reference external" href="http://bit.jd.com/svai/openSVAI/blob/dev/standardize/convert/detect_to_standard/detect_to_standard.py">Examples: detections to json</a></p>
 <p>We also provide specific code to output detection results from Deformable ConvNets in our SVAI format.</p>
 <p>The code is open-sourced in SVAI group. Please log in your Gitlab to access the code.</p>
-<p>Example Code: <a class="reference external" href="http://bit.jd.com/svai/openSVAI/blob/dev/standardize/convert/detect_to_standard/RFCN.py">Examples: RFCN to json</a></p>
+<p>Example Code: <a class="reference external" href="http://bit.jd.com/svai/openSVAI/blob/dev/standardize/convert/detect_to_standard/RFCN.py">Examples: RFCN to standard json</a></p>
+</div>
+<div class="section" id="read-detections-from-svai-standard-json">
+<h2>Read Detections From SVAI Standard Json<a class="headerlink" href="#read-detections-from-svai-standard-json" title="Permalink to this headline">¶</a></h2>
+<p>We provide the example code to load detection results of SVAI standard json format into python native format, for further processing (e.g., in the human pose estimation phase).</p>
+<p>The code is open-sourced in SVAI group. Please log in your Gitlab to access the code.</p>
+<p>Example Code: <a class="reference external" href="http://bit.jd.com/svai/openSVAI/blob/dev/standardize/convert/keypoint_to_standard/read_standard_detect.py">Examples: read standard json</a></p>
+</div>
+<div class="section" id="output-keypoints-to-svai-standard-json">
+<h2>Output Keypoints To SVAI Standard Json<a class="headerlink" href="#output-keypoints-to-svai-standard-json" title="Permalink to this headline">¶</a></h2>
+<p>We provide the example code to convert keypoint results into SVAI standard json output.
+The keypoints can be organized in any form. Usually the keypoints results are numpy array or python’s native data format.
+We can use the tools provided in our library to conveniently convert the results into json string, and/or write to file.</p>
+<p>The code is open-sourced in SVAI group. Please log in your Gitlab to access the code.</p>
+<p>Example Code: <a class="reference external" href="http://bit.jd.com/svai/openSVAI/blob/dev/standardize/convert/keypoint_to_standard/keypoint_to_standard.py">Examples: keypoints to json</a></p>
+<p>We provide specific code to output human keypoint results from Cascaded Pyramid Networks (CPN) in our SVAI format.</p>
+<p>Example Code: <a class="reference external" href="http://bit.jd.com/svai/openSVAI/blob/dev/standardize/convert/keypoint_to_standard/CPN.py">Examples: CPN to standard json</a></p>
 </div>
 <div class="section" id="conversion-between-formats">
 <h2>Conversion Between Formats<a class="headerlink" href="#conversion-between-formats" title="Permalink to this headline">¶</a></h2>
