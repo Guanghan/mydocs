@@ -65,6 +65,8 @@ Read Detections From SVAI Standard Json
 ========================================
 We provide the example code to load detection results of SVAI standard json format into python native format, for further processing (e.g., in the human pose estimation phase).
 
+We also give a specific example of converting the SVAI standard json format into Cascaded Pyramid Networks (CPN) format. With the provided utility code, the conversion is very convenient.  
+
 The code is open-sourced in SVAI group. Please log in your Gitlab to access the code.  
 
 Example Code: `Examples: read standard json <http://bit.jd.com/svai/openSVAI/blob/dev/standardize/convert/keypoint_to_standard/read_standard_detect.py>`_
