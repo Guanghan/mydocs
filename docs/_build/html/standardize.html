@@ -125,6 +125,15 @@ We can use the tools provided in our library to conveniently convert the results
 <p>We provide specific code to output human keypoint results from Cascaded Pyramid Networks (CPN) in our SVAI format.</p>
 <p>Example Code: <a class="reference external" href="http://bit.jd.com/svai/openSVAI/blob/dev/standardize/convert/keypoint_to_standard/CPN.py">Examples: CPN to standard json</a></p>
 </div>
+<div class="section" id="visualizer">
+<h2>Visualizer<a class="headerlink" href="#visualizer" title="Permalink to this headline">¶</a></h2>
+<p>We provide code to visualize detection as well as human pose estimation results based on the openSVAI’s standard json output.</p>
+<p>The detection results is given with a bounding box, giving the object class name and its confidence.</p>
+<p>The human pose estimation results include two parts: (1) the keypoints of each detected human candidate, (2) the keypoint associations to form body and limbs.
+This can be easily customized.</p>
+<p>The code is open-sourced in SVAI group. Please log in your Gitlab to access the code.</p>
+<p>Code: <a class="reference external" href="http://bit.jd.com/svai/openSVAI/blob/dev/standardize/convert/keypoint_to_standard/keypoint_visualizer.py">Keypoint Visualizer</a></p>
+</div>
 <div class="section" id="conversion-between-formats">
 <h2>Conversion Between Formats<a class="headerlink" href="#conversion-between-formats" title="Permalink to this headline">¶</a></h2>
 <p>We provide a series of utilities to convert between different formats.
