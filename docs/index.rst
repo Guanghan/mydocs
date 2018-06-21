@@ -39,6 +39,8 @@ Documentation
 
    install_greedy_track.rst
 
+   install_PoseFlow.rst
+
    utilities.rst
 
    standardize.rst
