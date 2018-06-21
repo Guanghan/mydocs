@@ -37,6 +37,8 @@ Documentation
 
    install_ArtTrack.rst
 
+   install_greedy_track.rst
+
    utilities.rst
 
    standardize.rst
