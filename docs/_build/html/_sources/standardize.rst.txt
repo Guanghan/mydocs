@@ -87,6 +87,18 @@ We provide specific code to output human keypoint results from Cascaded Pyramid 
 Example Code: `Examples: CPN to standard json <http://bit.jd.com/svai/openSVAI/blob/dev/standardize/convert/keypoint_to_standard/CPN.py>`_
 
 
+Read Both Detections and Keypoints From SVAI Standard Json
+===========================================================
+We provide the example code to load detection and keypoints results of SVAI standard json format into python native format, for further processing (e.g., in the human pose tracking phase).
+
+We also give a specific example of converting the SVAI standard json format into PoseFlow format. With the provided utility code, the conversion is very convenient.  
+
+The code is open-sourced in SVAI group. Please log in your Gitlab to access the code.  
+
+Example Code: `Examples: read standard json <http://bit.jd.com/svai/openSVAI/blob/dev/standardize/convert/keypoint_track_to_standard/read_standard_keypoint.py>`_
+
+
+
 Visualizer
 ============
 We provide code to visualize detection as well as human pose estimation results based on the openSVAI's standard json output.
