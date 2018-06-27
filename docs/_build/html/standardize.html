@@ -106,7 +106,7 @@ We can use the tools provided in our library to conveniently convert the results
 <p>Example Code: <a class="reference external" href="http://bit.jd.com/svai/openSVAI/blob/dev/standardize/convert/detect_to_standard/detect_to_standard.py">Examples: detections to json</a></p>
 <p>We also provide specific code to output detection results from Deformable ConvNets in our SVAI format.</p>
 <p>The code is open-sourced in SVAI group. Please log in your Gitlab to access the code.</p>
-<p>Example Code: <a class="reference external" href="http://bit.jd.com/svai/openSVAI/blob/dev/standardize/convert/detect_to_standard/RFCN.py">Examples: RFCN to standard json</a></p>
+<p>Example Code: <a class="reference external" href="http://bit.jd.com/svai/openSVAI/blob/dev/standardize/convert/detect_to_standard/posetrack_detect.py">Examples: RFCN to standard json</a></p>
 </div>
 <div class="section" id="read-detections-from-svai-standard-json">
 <h2>Read Detections From SVAI Standard Json<a class="headerlink" href="#read-detections-from-svai-standard-json" title="Permalink to this headline">¶</a></h2>
@@ -123,7 +123,7 @@ We can use the tools provided in our library to conveniently convert the results
 <p>The code is open-sourced in SVAI group. Please log in your Gitlab to access the code.</p>
 <p>Example Code: <a class="reference external" href="http://bit.jd.com/svai/openSVAI/blob/dev/standardize/convert/keypoint_to_standard/keypoint_to_standard.py">Examples: keypoints to json</a></p>
 <p>We provide specific code to output human keypoint results from Cascaded Pyramid Networks (CPN) in our SVAI format.</p>
-<p>Example Code: <a class="reference external" href="http://bit.jd.com/svai/openSVAI/blob/dev/standardize/convert/keypoint_to_standard/CPN.py">Examples: CPN to standard json</a></p>
+<p>Example Code: <a class="reference external" href="http://bit.jd.com/svai/openSVAI/blob/dev/standardize/convert/keypoint_to_standard/posetrack_pose.py">Examples: CPN to standard json</a></p>
 </div>
 <div class="section" id="read-both-detections-and-keypoints-from-svai-standard-json">
 <h2>Read Both Detections and Keypoints From SVAI Standard Json<a class="headerlink" href="#read-both-detections-and-keypoints-from-svai-standard-json" title="Permalink to this headline">¶</a></h2>
@@ -131,6 +131,16 @@ We can use the tools provided in our library to conveniently convert the results
 <p>We also give a specific example of converting the SVAI standard json format into PoseFlow format. With the provided utility code, the conversion is very convenient.</p>
 <p>The code is open-sourced in SVAI group. Please log in your Gitlab to access the code.</p>
 <p>Example Code: <a class="reference external" href="http://bit.jd.com/svai/openSVAI/blob/dev/standardize/convert/keypoint_track_to_standard/read_standard_keypoint.py">Examples: read standard json</a></p>
+<p>We provide specific code to read standard json file and convert to PoseFlow format.</p>
+<p>Example Code: <a class="reference external" href="http://bit.jd.com/svai/openSVAI/blob/dev/standardize/convert/keypoint_track_to_standard/read_standard_keypoint.py">Examples: convert to PoseFlow</a></p>
+</div>
+<div class="section" id="output-pose-tracking-results-to-svai-standard-json">
+<h2>Output Pose Tracking Results To SVAI Standard Json<a class="headerlink" href="#output-pose-tracking-results-to-svai-standard-json" title="Permalink to this headline">¶</a></h2>
+<p>We provide the example code to convert pose tracking results into SVAI standard json output.</p>
+<p>The code is open-sourced in SVAI group. Please log in your Gitlab to access the code.</p>
+<p>Example Code: <a class="reference external" href="http://bit.jd.com/svai/openSVAI/blob/dev/standardize/convert/keypoint_track_to_standard/track_to_standard.py">Examples: keypoints to json</a></p>
+<p>We provide specific code to output human pose tracking results from PoseFlow in our SVAI format.</p>
+<p>Example Code: <a class="reference external" href="http://bit.jd.com/svai/openSVAI/blob/dev/standardize/convert/keypoint_track_to_standard/posetrack_track.py">Examples: PoseFlow to standard json</a></p>
 </div>
 <div class="section" id="visualizer">
 <h2>Visualizer<a class="headerlink" href="#visualizer" title="Permalink to this headline">¶</a></h2>
@@ -138,6 +148,9 @@ We can use the tools provided in our library to conveniently convert the results
 <p>The detection results is given with a bounding box, giving the object class name and its confidence.</p>
 <p>The human pose estimation results include two parts: (1) the keypoints of each detected human candidate, (2) the keypoint associations to form body and limbs.
 This can be easily customized.</p>
+<p>The human pose tracking results include the detection results, the pose estimation results, and the tracking ID.
+We output pose tracking results in images by default.
+We also support outputing the pose tracking results into videos.</p>
 <p>The code is open-sourced in SVAI group. Please log in your Gitlab to access the code.</p>
 <p>Code: <a class="reference external" href="http://bit.jd.com/svai/openSVAI/blob/dev/standardize/convert/keypoint_to_standard/keypoint_visualizer.py">Keypoint Visualizer</a></p>
 <p>Code: <a class="reference external" href="http://bit.jd.com/svai/openSVAI/blob/dev/standardize/convert/detect_to_standard/detection_visualizer.py">Detection Visualizer</a></p>
