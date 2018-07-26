@@ -22,3 +22,5 @@ Installation of Components
    install_PoseFlow.rst
 
    install_polygonRNN.rst
+	 
+   install_humanparsing.rst
