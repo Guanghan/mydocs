@@ -99,6 +99,16 @@ Link:
 SimpleAPP
 ================================
 YiLin Chen's work: A boiler-plate for android app integrating DL algorithms.
+
 Link:
 
 `Project <http://git.jd.com/guanghan.ning/SimpleAPP>`_
+
+
+YiLin's slides
+=================================
+YiLin Chen's internship summary.
+
+Link:
+
+`Slides <http://3.cn/cDCUS3D>`_
