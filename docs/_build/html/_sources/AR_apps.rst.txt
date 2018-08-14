@@ -49,3 +49,56 @@ access the code.
 Link:
 
 `Project <http://bit.jd.com/svai/openSVAI/tree/dev/AR/Poseg>`_
+
+
+NCNN-CRF
+================================
+YiLin Chen's work: Conditional Random Fields in NCNN
+
+Link:
+
+`Project <http://git.jd.com/guanghan.ning/ncnn-crf>`_
+
+
+NCNN-SEG
+================================
+YiLin Chen's work: an image segmentation Android app integrated with NCNN framework.
+
+Link:
+
+`Project <http://git.jd.com/guanghan.ning/NcnnSeg>`_
+
+
+MACE-SEG
+================================
+YiLin Chen's work: an image segmentation Android app integrated with XiaoMi's MACE (Mobile AI Compute Engine).
+
+Link:
+
+`Project <http://git.jd.com/guanghan.ning/MaceSeg>`_
+
+
+MACE
+================================
+YiLin Chen's version of MACE
+
+Link:
+
+`Project <http://bit.jd.com/svai/NcnnSeg/tree/master>`_
+
+
+Caffe2Seg
+================================
+YiLin Chen's work: image segmentation on Caffe
+
+Link:
+
+`Project <http://git.jd.com/guanghan.ning/Caffe2Seg>`_
+
+
+SimpleAPP
+================================
+YiLin Chen's work: A boiler-plate for android app integrating DL algorithms.
+Link:
+
+`Project <http://git.jd.com/guanghan.ning/SimpleAPP>`_
