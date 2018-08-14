@@ -112,3 +112,42 @@ YiLin Chen's internship summary.
 Link:
 
 `Slides <http://3.cn/cDCUS3D>`_
+
+Android Native Development Kit:
+
+https://hackmd.io/WO-nZYsfR1icmYbWy3jFrQ
+
+
+How to Import OpenCV in Android NDK:
+
+https://hackmd.io/pdIcTgr7RuKGlYjwaGDwhw
+
+
+How to Build Caffe on Mac:
+
+https://hackmd.io/8ljOZQVOQ3qVG1SJIERF3g
+
+
+Integrating Caffe2 on Android 
+
+https://hackmd.io/6SaIcmEfRkGnFDKJ6NXsyw
+
+
+How to Build NCNN on Mac:
+
+https://hackmd.io/4i6x5TeFRJKrq2s5XjgPBg
+
+
+Integrating NCNN on Android using CMake:
+
+https://hackmd.io/u5AfZIgSQe6s4cN9FpADcw
+
+
+How to Build MACE on Mac:
+
+https://hackmd.io/d1V8KrzpT7GxWKCu2k2RZQ
+ 
+
+Integrating MACE on Android using CMake:
+
+https://hackmd.io/uEXUX7YwRba6qkWIRUZtgw
