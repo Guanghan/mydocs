@@ -1,0 +1,38 @@
+
+.. _eccv2018:
+
+
+***************************************
+ECCV 2018 papers
+***************************************
+
+Human Pose Estimation
+=============================
+* Mutual Learning to Adapt for Joint Human Parsing and Pose Estimation: `Paper <http://openaccess.thecvf.com/content_ECCV_2018/papers/Xuecheng_Nie_Mutual_Learning_to_ECCV_2018_paper.pdf>`_
+
+* Pose Guided Human Video Generation
+* PersonLab: Person Pose Estimation and Instance Segmentation with a Bottom-Up, Part-Based, Geometric Embedding Model
+* MultiPoseNet: Fast Multi-Person Pose Estimation using Pose Residual Network
+* Pose Proposal Networks
+* Integral Human Pose Regression
+* Pose Partition Networks for Multi-Person Pose Estimation
+* 3D Ego-Pose Estimation via Imitation Learning
+* Graph Distillation for Action Detection with Privileged Modalities
+
+
+Visual Tracking
+=============================
+* Distractor-aware Siamese Networks for Visual Object Tracking: [Code]
+* Real-time ‘Actor-Critic’ Tracking
+* Tracking Emerges by Colorizing Videos
+* Multi-object Tracking with Neural Gating Using Bilinear LSTM
+* Long-term Tracking in the Wild: A Benchmark
+* Online Multi-Object Tracking with Dual Matching Attention Networks
+* TrackingNet: A Large-Scale Dataset and Benchmark for Object Tracking in the Wild
+* Deep Regression Tracking with Shrinkage Loss [Code]
+
+Graphs
+=============================
+* Local Spectral Graph Convolution for Point Set Feature Learning
+* Adaptively Transforming Graph Matching
+* Incremental Multi-graph Matching via Diversity and Randomness based Graph Clustering

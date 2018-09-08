@@ -39,6 +39,8 @@ Documentation
 
    AR_apps.rst
 
+   eccv2018.rst
+
 
 Search
 ==================
